@@ -23,11 +23,6 @@ public class Contar_Caracteres {
             while (scan.hasNext()){
                 palabra = scan.next();
 
-                // creo que sigue contando aunque sea mas de dos
-                // con que contenga la cantidad especificada
-                // aunque sobrepase lo indicado
-                // estoy tratando de corregir esta parte
-
                 for (int i = 0; i<palabra.length(); i++) {
                         longitud = palabra.length();
                         if (!Character.isDigit(i)){
