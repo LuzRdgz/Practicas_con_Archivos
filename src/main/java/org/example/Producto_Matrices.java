@@ -56,11 +56,13 @@ public class Producto_Matrices {
                 }
             }
 
+            FileOutputStream new_matriz = new FileOutputStream("C:\\Users\\LuzRd\\Desktop\\c.mat");
             for (int[] ints : matC) {
                 for (int m = 0; m < matC.length; m++) {
-                    System.out.print(ints[m]);
+                    new_matriz.write(m);
                 }
             }
+            new_matriz.close();
 
         } catch (IOException e) {
             throw new RuntimeException(e);
